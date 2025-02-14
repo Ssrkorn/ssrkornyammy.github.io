@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentine's Day with You</title>
+    <style>
+        body {
+            background-image: url("background1.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #212f3d;
+        }
+        .container {
+            margin-top: 50px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #decoded {
+            font-size: 20px;
+            line-height: 1.5;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+        button {
+            background-color: #ffb6c1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Valentine's Day with You</h1>
+        <div id="message">
+            <p>Happy Valentine's Day, my love!</p>
+            <p>Enter the code to reveal a special message:</p>
+            <input type="number" id="code-input" placeholder="Enter code">
+            <button onclick="checkCode()">Check Code</button>
+        </div>
+        <div id="decoded" style="display: none;">
+            <p>17/10/2024</p>
+            <p>ตั้งเเต่มีเบบี๋ชีวิตเค้าก็มีความสุขมากถึงจะทะเลาะกันบ้าง ไม่เข้าใจกันบ้าง งอนกันบ้าง</p>
+            <p>เเต่เค้าไม่เคยรู้สึกว่าจะสนใจผู้หญิงคนไหนได้เท่าเทอเลย เทอเป็นผู้หญิงที่น่ารักมากๆ เค้าน้อยใจเก่ง</p>
+            <p>เเต่จริงๆเค้าก็รู้ว่าเบบี๋รักเค้ามากเลย เทอคือของขวัญที่ดีที่สุด ขอให้ของขวัญชิ้นนี้อยู่กับเค้าให้นานที่สุดเลยนะ</p>
+            <p>เดี๋ยวปีถัดไปจะเขียนให้ดีกว่านี้ให้เบบี๋ถูกใจให้ได้ เค้าจะซัพพอร์ตเทอให้ที่สุดเท่าที่เค้าทําได้เลย ที่รักขาเค้ารักเทอนะคะอิอิ</p>
+        </div>
+
+        <audio autoplay loop controls>
+            <source src="Old Love.ogg" type="audio/ogg">
+            <source src="Old Love.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function checkCode() {
+            const enteredCode = document.getElementById("code-input").value;
+            const decodedDiv = document.getElementById("decoded");
+
+            if (enteredCode === "17102024") {
+                document.getElementById("message").style.display = "none";
+                decodedDiv.innerHTML = `
+                    <p>17/10/2024(วันวาเลนไทน์2025)</p>
+                    <p>ตั้งเเต่มีเบบี๋ชีวิตเค้าก็มีความสุขมากถึงจะทะเลาะกันบ้าง ไม่เข้าใจกันบ้าง งอนกันบ้าง</p>
+                    <p>เเต่เค้าไม่เคยรู้สึกว่าจะสนใจผู้หญิงคนไหนได้เท่าเทอเลย เทอเป็นผู้หญิงที่น่ารักมากๆ เค้าน้อยใจเก่ง</p>
+                    <p>เเต่จริงๆเค้าก็รู้ว่าเบบี๋รักเค้ามากเลย เทอคือของขวัญที่ดีที่สุด ขอให้ของขวัญชิ้นนี้อยู่กับเค้าให้นานที่สุดเลยนะ</p>
+                    <p>เดี๋ยวปีถัดไปจะเขียนให้ดีกว่านี้ให้เบบี๋ถูกใจให้ได้ เค้าจะซัพพอร์ตเทอให้ที่สุดเท่าที่เค้าทําได้เลย ที่รักขาเค้ารักเทอนะคะอิอิ</p>
+                `;
+                decodedDiv.style.display = "block";
+            } else if (enteredCode === "14022025") {
+                document.getElementById("message").style.display = "none";
+                decodedDiv.innerHTML = `
+                    <p>14/02/2025</p>
+                    <p>สําหรับทุกอย่างที่เค้าทําผิดไปเค้าขอโทษนะ ที่ทําให้ผิดหวังในหลายๆเรื่อง เค้าผิดหวังในตัวเองมากที่ทําไม่ดีกับเทอจังหวะที่เห็นเทอนํ้าตาไหล</p>
+					<p>เค้าช็อคมากไม่รู้สิเค้าพูดไม่ออกกับสิ่งที่เกิดขึ้น ทุกอย่างเหมือนพังหมดเลยเพราะตัวเค้าที่คิดเเต่จะต้องชนะ</p> 
+					<p>เค้ารู้สึกผิดต่อเทอจนเค้าเองไม่กล้าจะพูดหรือคุยกับเทอจริงๆ</p>
+					<p>เค้าอยากให้เทอสบายใจมาตลอดเเละนั่นคือความตั้งใจของเค้าวันนี้เเต่พอเค้ามัวเเต่คิดมากจนทําอะไรไม่ดีลงไป</p>
+					<p>เเล้วมันทําให้เทอเสียใจ ตัวเค้าผิดหวังกับตัวเองจนใจอยู่ไม่สุขเลยจริงๆ ตัวเค้าอยากบอกเทอว่าขอโทษจริงๆ</p>
+					<p>อะไรที่เป็นปัญหาเค้าจะหยุดมันให้ได้ ขอโทษสําหรับทุกอย่างครับ</p>
+                `;
+                decodedDiv.style.display = "block";
+            } else {
+                alert("Incorrect code. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
